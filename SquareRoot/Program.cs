@@ -4,7 +4,8 @@
 {
     public static void Main(String[] args)
     {
-        double c = 16;
+        Console.WriteLine("Enter the number:");
+        double c = Convert.ToDouble(Console.ReadLine());
         double epsilon = 1e-15;
         double t = c;
 
@@ -13,8 +14,9 @@
             t = (c / t + t)/ 2.0;
         }
 
-        Console.WriteLine("Value =" +t);
+        Console.WriteLine("Square root is " +t);
 
     }
     
 }
+ 
