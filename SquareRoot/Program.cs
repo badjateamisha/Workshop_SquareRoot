@@ -11,7 +11,7 @@
 
         while(Math.Abs(t- c/t) > epsilon*t)
         {
-            t = (c / t + t)/ 2.0;
+            t = ((c / t) + t)/ 2.0;
         }
 
         Console.WriteLine("Square root is " +t);
